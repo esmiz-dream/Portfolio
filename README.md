@@ -246,6 +246,6 @@ I want to thank Microvers for providing me with this full stack developer module
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENCE) licensed.
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
