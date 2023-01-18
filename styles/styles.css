@@ -16,6 +16,118 @@ body {
   background: #fff;
 }
 
+.status-bar {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 55%;
+  align-items: baseline;
+  justify-content: space-around;
+  background: #3c3a39;
+}
+
+.status-bar span {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+  color: #fff;
+}
+
+.status-bar span:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(151, 71, 255);
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5.03px;
+  align-items: center;
+}
+
+.network-signal {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  column-gap: 1.67px;
+}
+
+.network-signal .signal {
+  width: 3px;
+  border-radius: 1px;
+}
+
+.network-signal .signal,
+.battery-level {
+  background: #fff;
+}
+
+/* set height for network signal levels */
+.network-signal .first-level {
+  height: 4px;
+}
+
+.network-signal .second-level {
+  height: 6px;
+}
+
+.network-signal .thired-level {
+  height: 8.33px;
+}
+
+.network-signal .fourth-level {
+  height: 10.67px;
+}
+
+/* styling section for wifi signal */
+.wifi-signal {
+  position: relative;
+  top: 7px;
+}
+
+.wifi-signal .signal {
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  border-radius: 50%;
+  border-style: solid;
+  margin: 2px;
+}
+
+/* for battery design */
+.battery {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 1px;
+}
+
+.battery-level {
+  width: 18px;
+  height: 7.33px;
+  border: solid 1px #8a8988;
+  padding: 1px;
+  background-clip: content-box; /* support: IE9+ */
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.battery-top {
+  width: 1.33px;
+  height: 4px;
+  background-color: #8a8988;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+/* button effect for signals */
+.network-signal .signal:hover {
+  box-shadow: 0 0 0 1px rgb(151, 71, 255);
+}
+
+/* styling for header */
 .header {
   width: 100%;
   height: 48px;
@@ -28,6 +140,7 @@ body {
 }
 
 .logo {
+  text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #fff;
@@ -36,7 +149,8 @@ body {
   font-weight: 700;
 }
 
-.logo:hover {
+.logo:hover,
+.underlined:hover {
   text-decoration: underline;
   text-decoration-color: rgb(12, 140, 233);
 }
@@ -110,6 +224,7 @@ body {
   justify-content: space-around;
   width: 200px;
   height: 40px;
+  list-style: none;
 }
 
 .social-media img {
