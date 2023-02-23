@@ -348,8 +348,7 @@ li {
 /* styling for similar card i.e myslfe works */
 .common-work-card {
   margin: 0;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -570,14 +569,22 @@ li {
   top: -21.5%;
 }
 
-/* get in touch styling */
 .get-in-touch {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 24px;
   padding: 120px 24px;
 }
+
+.get-in-touch-form > * {
+  padding: 0px;
+  margin-bottom: 36px;
+}
+
+/* .required::after{
+  content: "*";
+  color: red;
+} */
 
 .get-in-touch p {
   font-family: "Inter", sans-serif;
@@ -590,7 +597,7 @@ li {
   width: 100%;
 }
 
-.get-in-touch input {
+.get-in-touch-form input {
   border-left: none;
   width: 100%;
   border-right: none;
@@ -603,17 +610,21 @@ li {
   line-height: 24px;
 }
 
-.get-in-touch textarea {
+.get-in-touch-form textarea {
   width: 100%;
   background: #fbf8f7;
   border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
 }
 
-.get-in-touch button {
+.get-in-touch-form button {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
   padding: 12px;
   gap: 10px;
   width: 131px;
@@ -661,7 +672,7 @@ li {
 .my-work-grid-container button:hover,
 .work-1-span:hover,
 .about-me button:hover,
-.get-in-touch button:hover {
+.get-in-touch-form button:hover {
   box-shadow: 0 0 0 2px rgb(12, 140, 233);
 }
 
@@ -681,4 +692,16 @@ li {
   /* Neutrals/N40 */
 
   background: #dfe1e6;
+}
+
+/* Descktop Version */
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: #505f79;
+  }
+
+  .main-content {
+    width: 100%;
+  }
 }
