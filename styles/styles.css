@@ -695,14 +695,4 @@ li {
   background: #dfe1e6;
 }
 
-/* Descktop Version */
 
-@media screen and (min-width: 600px) {
-  body {
-    background-color: #505f79;
-  }
-
-  .main-content {
-    width: 100%;
-  }
-}
